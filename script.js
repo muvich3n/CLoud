@@ -478,12 +478,12 @@ if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMa
  * Environment map
  */
 const environmentMap = cubeTextureLoader.load([
-'/textures/environmentMaps/7/px.png',
-'/textures/environmentMaps/7/nx.png',
-'/textures/environmentMaps/7/py.png',
-'/textures/environmentMaps/7/ny.png',
-'/textures/environmentMaps/7/pz.png',
-'/textures/environmentMaps/7/nz.png'
+'./textures/environmentMaps/7/px.png',
+'./textures/environmentMaps/7/nx.png',
+'./textures/environmentMaps/7/py.png',
+'./textures/environmentMaps/7/ny.png',
+'./textures/environmentMaps/7/pz.png',
+'./textures/environmentMaps/7/nz.png'
 ])
 environmentMap.encoding = THREE.sRGBEncoding
 scene.background = environmentMap
@@ -499,7 +499,7 @@ let mixer3  = null
 
 
 gltfLoader.load(
-    '/Planet/planet_noAnimation.gltf',
+    './Planet/planet_noAnimation.gltf',
     (gltf) => {
         gltf.scene.scale.set(0.005,0.005,0.005)
         scene.add(gltf.scene)
@@ -516,7 +516,7 @@ var slbModel = null
 var uploadModel = null
 
 gltfLoader.load(
-    '/Planet/upload.gltf',
+    './Planet/upload.gltf',
     (gltf) => {
         gltf.scene.scale.set(0.005,0.005,0.005)
         scene.add(gltf.scene)
@@ -529,7 +529,7 @@ gltfLoader.load(
 )
 
 gltfLoader.load(
-    '/Planet/SLB.gltf',
+    './Planet/SLB.gltf',
     (gltf) => {
         gltf.scene.scale.set(0.005,0.005,0.005)
         scene.add(gltf.scene)
@@ -544,7 +544,7 @@ gltfLoader.load(
 )
 
 gltfLoader.load(
-    '/Planet/Backup.gltf',
+    './Planet/Backup.gltf',
     (gltf) => {
         gltf.scene.scale.set(0.005,0.005,0.005)
         scene.add(gltf.scene)
